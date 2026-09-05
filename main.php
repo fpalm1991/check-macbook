@@ -1,5 +1,6 @@
 <?php
 
+use CLI\CheckMacBook\Command\CheckAllSettings;
 use CLI\CheckMacBook\Command\CheckBluetoothSettings;
 use CLI\CheckMacBook\Command\CheckFileVaultSettings;
 use CLI\CheckMacBook\Command\CheckFirewallSettings;
@@ -15,6 +16,7 @@ $application->addCommands([
     new CheckFileVaultSettings(),
     new CheckFirewallSettings(),
     new CheckVPNSettings(),
+    new CheckAllSettings(),
 ]);
 
 $application->run();
