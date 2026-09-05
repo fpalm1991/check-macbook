@@ -18,7 +18,6 @@ final class CheckBluetoothSettings extends Command
     #[Override]
     protected function configure(): void
     {
-
         $this
             ->setName('check:bluetooth')
             ->setDescription('Check Bluetooth status of device')
@@ -28,7 +27,6 @@ final class CheckBluetoothSettings extends Command
     #[Override]
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-
         $state = new SettingChecker(
             command: 'system_profiler SPBluetoothDataType | grep -i "state" | xargs',
             expectedCommandOutput: 'State: On',
