@@ -3,6 +3,7 @@
 use CLI\CheckMacBook\Command\CheckBluetoothSettings;
 use CLI\CheckMacBook\Command\CheckFileVaultSettings;
 use CLI\CheckMacBook\Command\CheckFirewallSettings;
+use CLI\CheckMacBook\Command\CheckVPNSettings;
 use Symfony\Component\Console\Application;
 
 require __DIR__ . '/vendor/autoload.php';
@@ -13,6 +14,7 @@ $application->addCommands([
     new CheckBluetoothSettings(),
     new CheckFileVaultSettings(),
     new CheckFirewallSettings(),
+    new CheckVPNSettings(),
 ]);
 
 $application->run();
