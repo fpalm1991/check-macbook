@@ -1,0 +1,17 @@
+{
+    "name": "cli/check-macbook",
+    "autoload": {
+        "psr-4": {
+            "CLI\\CheckMacBook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Feliu"
+        }
+    ],
+    "require": {
+        "symfony/console": "^8.1",
+        "symfony/process": "^8.1"
+    }
+}
